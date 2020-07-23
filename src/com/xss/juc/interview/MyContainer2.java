@@ -59,6 +59,8 @@ public class MyContainer2<T> {
         return t;
     }
     public static void main(String[] args) {
+        MyContainer2 myContainer2 = new MyContainer2();
+        myContainer2.put(new Object());
         MyContainer1<String> c = new MyContainer1<>();
         //启动消费者线程
         for (int i = 0; i < 10; i++) {
